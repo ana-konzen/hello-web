@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#loading {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  left: 66vw;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+  background: black;
+  animation: rotate 2s infinite;
+  display: none;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#header {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+  font-size: 30px;
+  margin-top: 20px;
+  /* line-height: 60px; */
+}
+
+#formCont {
+  margin-top: 10px;
+}
+
+#formTitle {
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-align: left;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.button {
+  display: inline-block;
+  padding: 4px 8px;
+  cursor: pointer;
+  background: black;
+  border: none;
+  color: #ede3d3;
+  font-size: 12px;
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-weight: 500;
+  transition: 100ms;
+}
+.button:hover {
+  opacity: 0.5;
+}
+
+#leftCont {
+  background: #ede3d3;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 30vw;
+  padding: 30px;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#imgContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#gallery {
+  display: flex;
+  width: 60vw;
+  right: 30px;
+  position: absolute;
+  top: 0px;
+}
+
+.column {
+  flex: 1;
+  height: 100%;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.gallery-cont {
+  display: flex;
+  position: relative;
+  flex-flow: column;
+  justify-content: right;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-items: right;
+  margin-bottom: 20px;
+}
+
+.caption {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.caption p,
+a {
+  font-family: "neue-haas-grotesk-text", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: black;
+}
+
+.caption a {
+  text-decoration: none;
+  font-weight: 400;
+  transition: 100ms;
+}
+
+.caption a:hover {
+  font-weight: 600;
+}
+
+.caption .title {
+  font-weight: 100;
+  font-style: italic;
+}
+
+.caption .artist {
+  font-weight: 600;
+}
+
+.gallery-cont img {
+  width: 80%;
+}

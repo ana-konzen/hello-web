@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Art Gallery</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://use.typekit.net/eiw8ajb.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="loading"></div>
+
+    <div id="leftCont">
+      <h2 id="header">art analyzer</h2>
+      <div id="formCont">
+        <!-- <h3 id="formTitle">upload your image</h3> -->
+        <label for="imageInput" class="button" id="fileLabel">choose file</label>
+        <input id="imageInput" type="file" accept="image/png, image/jpeg" />
+        <button id="send" class="button">send</button>
+      </div>
+      <div id="imgContainer">
+        <img id="artImg" src="monet.png" />
+        <div id="imageInfo" class="caption"></div>
+      </div>
+    </div>
+
+    <div id="gallery"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
